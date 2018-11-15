@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://felicegattuso.com/projects/timedropper/js/timedropper/timedropper.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+    <title>Portfolio</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script type="text/javascript" src="assets/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="http://felicegattuso.com/projects/timedropper/js/timedropper/timedropper.js"></script>
+    <script type="text/javascript" src="assets/slider.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="row">
+        <div class="menu col-xs-8">
+          <ul>
+            <li><a href="/welcome">Welcome</a></li> 
+            <li><a href="/portfolio">Portfolio</a></li> 
+            <li><a href="/blog">Blog</a></li> 
+            <li><a href="/about">About</a></li> 
+            <li><a href="/contact">Contact</a></li> 
+          </ul>
+        </div>
+        <div class="name col-xs-4">
+              ttt tkn
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <%= yield %>
+    </main>
+
+    <footer>
+        <div class="container">
+          <ul class="social_media">
+            <li><a href="https://github.com/tttakano"><img class="github" src="/assets/github-logo.svg"></a></li>
+            <li><a href="https://twitter.com/tetuzinn1118"><img class="twitter" src="/assets/twitter-logo-silhouette.svg"></a></li>
+          </ul>
+          <p>&copy; ttttkn 2017</p>
+        </div>
+    </footer>
+  </body>
+</html>
